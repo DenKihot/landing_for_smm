@@ -1,0 +1,18 @@
+h2 {
+  text-align: center;
+  padding-top: 120px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.125rem;
+  line-height: 42px;
+}
+
+h3 {
+  font-family: "Gilroy-Bold",sans-serif;
+  font-size: 1.125rem;
+  line-height: 22px;
+}
+p {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1.3rem;
+  line-height: 22px;
+}
