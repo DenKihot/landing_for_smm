@@ -10,4 +10,7 @@ li {
 a {
   text-decoration: none;
 }
-
+a:hover {
+  cursor: pointer;
+  transition:.6s;
+}
