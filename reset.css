@@ -9,8 +9,12 @@ li {
 }
 a {
   text-decoration: none;
+  transition:.6s;
 }
 a:hover {
   cursor: pointer;
-  transition:.6s;
+}
+span {
+  margin: 0;
+  padding: 0;
 }
