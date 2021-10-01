@@ -1,9 +1,16 @@
 $(document).ready(function(){
-  $('.portfolio__wrapper').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });	
+	const slider = new Splide( '.splide' ).mount();
+
+  slider.on( 'active', function(item) {
+    setTimeout(() => {
+      item.slide.style.filter = 'grayscale(0%)'
+    }, 500);
+  } );
+
+
+  slider.on( 'inactive', function(item) {
+          item.slide.style.filter = 'grayscale(100%)'
+  } );
+
+
 });

@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="elems.css">
-  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="splide-2.4.21/dist/css/splide.min.css">
+  <link rel="icon" href="images/favicon_io/favicon.ico">
+
   <title>Lera Breadshaw</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
           <li><a href="#">Главная</a></li>
           <li><a href="#about-me">Обо мне</a></li>
           <li><a href="#service">Услуги</a></li>
-          <li><a href="#">Портфолио</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
           <li><a href="#contacts">Контакты</a></li>
         </ul>
       </div>
@@ -30,9 +31,9 @@
         <p class="typing"> SMM | PR
         <br>
         Тексты</p>
-        <p>С.Петербург</p>  
+        <p class='main-window__city'>С.Петербург</p>  
       </div>
-      <img src="images/49.PNG" alt="#">
+      <div class="img" alt="#"></div>
       </div>
   </section>
   <section class="about-me">
@@ -86,7 +87,7 @@
         </div>
         <div>
           <h3>Организация съёмки</h3>
-          <p>Данная услуга включён выбор концепции для съёмки исходя из целей и ваших пожеланий, 
+          <p>Данная услуга включает выбор концепции для съёмки исходя из целей и ваших пожеланий, 
             подбор референсов, студии, фотографа и моделей по необходимости.
             Я присутствую и контролирую весь процесс.</p>
             <p>Стоимость: <span>10000₽</span></p> 
@@ -102,13 +103,72 @@
       </div>
     </div>
   </section>
-  <!-- <section class="portfolio">
+  <section class="portfolio">
     <div class="portfolio__wrapper">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <h2 id='portfolio'>Портфолио</h2>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+            <a href="https://instagram.com/oceankidpool?utm_medium=copy_link" target="_blank">
+                <img src="images/img1.PNG" alt="">
+            </a>
+            </li>
+            <li class="splide__slide">
+            <a href="https://www.instagram.com/stopexpress/?utm_medium=copy_link" target="_blank">
+                <img src="images/img2.PNG" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/crocodile.rest/?utm_medium=copy_link" target="_blank">
+                <img src="images/img3.PNG" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/uppetit.ru/?utm_medium=copy_link" target="_blank">
+                <img src="images/img4.jpg" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/annenkovaschool/?utm_medium=copy_link" target="_blank">
+                <img src="images/img5.jpg" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/caramel_catering_official/?utm_medium=copy_link" target="_blank">
+                <img src="images/img6.jpg" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/isee_center/?utm_medium=copy_link" target="_blank">
+                <img src="images/img7.jpg" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/yellikids/?utm_medium=copy_link" target="_blank">
+                <img src="images/img8.jpg" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/chaikhana_chabrez/?utm_medium=copy_link" target="_blank">
+                <img src="images/img9.jpg" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/chaikhana_chabrez/?utm_medium=copy_link" target="_blank">
+                <img src="images/img10.jpg" alt="">
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="https://www.instagram.com/cafechedor/?utm_medium=copy_link" target="_blank">
+                <img src="images/img11.jpg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </section> -->
+  </section>
   <section class="contacts">
     <div class="contacts__wrapper">
       <h2 id="contacts">Контакты</h2>
@@ -124,7 +184,7 @@
     </div>
   </section>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+  <script src="splide-2.4.21/dist/js/splide.min.js"></script>
   <script src="script-slider.js"></script>
 </body>
 </html>
