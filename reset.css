@@ -10,7 +10,7 @@ li {
 }
 a {
   text-decoration: none;
-  transition:.6s;
+  transition:ease-in-out .2s linear;
 }
 a:hover {
   cursor: pointer;

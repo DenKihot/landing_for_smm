@@ -64,7 +64,7 @@
   font-size: 1.3em;
 }
 .main-window__city {
-  transform: rotate(-90deg) translate(20px, 200px);
+  transform: rotate(-90deg) translate(20px, 50px);
 }
 @keyframes typing {
   from {
@@ -323,27 +323,66 @@ rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; unknow */
     top: 70px;
     right: 0px;
     width: 33px;
-    height: 20px;
+    border: 0;
+    
+  }
+  .main-window__burger span {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border-radius: 20px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  .main-window__burger span:after,
+  .main-window__burger span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    border-radius: 20px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  .main-window__burger span:after{
+      top: -8px;
+  }
+  .main-window__burger span:before {
+    bottom: -8px;
   }
   .main-window__burger {
-     cursor: pointer;
+    cursor: pointer;
+  }
+  .main-window__burger img{
+    width: 100%;
+    height: 100%;
   }
   .main-window__select {
-    display: flex;
-    display: none;
+    display: none; 
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 740px;
-     background-color: #fff; 
+    background-color: #fff; 
     z-index: 2;
     right: 0;
+    opacity: 0;
+    transition: .6s;
   }
   .main-window__select ul{
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
     padding-left: 26px;
+    width: 100%;
   }
+  .main-window__select li:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    width: 100%;
+  }
+
   .main-window__select  a {
     color: #828282;
     font-family: "Gilroy-Bold", sans-serif;
@@ -353,13 +392,12 @@ rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; unknow */
   .main-window__select a:hover {
     color: #000000;
     transition: 0.6s;
-    
-
+  }
+  .main-window__select button {
+    border: none;
+    background-color: transparent;
   }
   .main-window__select img {
-    position: absolute;
-    top: 80px;
-    right: 10px;
     width: 23px;
     height: 23px;
   }
